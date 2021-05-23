@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHY104_63070504829</title>
+    <script>
+        function CtoF(){
+            let C = parseFloat(document.getElementById("cel").value);
+            let F = (C*9/5)+32;
+            document.getElementById("fah").value = F.toFixed(2);
+        }
+        function FtoC(){
+            let F = parseFloat(document.getElementById("fah").value);
+            let C = (F-32)*(5/9)
+            document.getElementById("cel").value = C.toFixed(2);
+        }
+    </script>
+    <style>
+        body{
+            background-color: rgb(240, 228, 179);
+        }
+        h2{
+            text-align: center;
+            font-size: 50px;
+            font-family:sans-serif;
+            color: rgb(228, 0, 76);
+            text-shadow: 5px 5px 10px rgb(236, 115, 155);
+        }
+        .a{
+            margin:20px; 
+            background-color:#eeff8eb6;
+            font-size: 42px;
+            text-align: center;
+            padding: 20px ;
+            border-radius: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>  
+</head>
+<body>
+    <h2>&#9193; วงจร RC &#9194;</h2>      
+    <div class="a"> 
+        &#128073; วงจร RC ประกอบด้วย &#128072;&#127999;
+        <p>&#128013; 1.แหล่งกำเเนิดไฟฟ้า 2.ตัวต้านทาน 3.ตัวเก็บประจุ </p>
+        <p>&#128011; เมื่อสับสวิตช์ไปที่จุด a ประจุไฟฟ้าและพลังงานจะถ่ายเทจากแหล่งกำเนิดไฟฟ้าไปสะสมในตัวตัวเก็บประจุไฟฟ้า และพลังงานบางส่วนเสียไปในตัวต้านทานในรูปความร้อน เป็นวงจรการชาร์จประจุไฟฟ้า</p>
+        <p>&#128012; จากนั้น เมื่อสับสวิตช์ไปที่จุด b พลังงานและประจุไฟฟ้าที่เคยสะสมในตัวเก็บประจุ จะคลายออกให้กับตัวต้านทาน เป็นวงจรการคลายประจุไฟฟ้า</p>
+    </div>
+    <div align="center">
+        <img src="https://1.bp.blogspot.com/-XBB7bsm3XEs/WsXFFoMPoRI/AAAAAAAAcjE/fHNfA8_U2EYKXkDJZluJRMx8ALwUIOTmgCLcBGAs/s1600/1%2528a%2529.jpg" 
+        id="img" width="500" >
+    </div>
+
+</body>
+</html>

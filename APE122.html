@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APE122_63070504829</title>
+    <script>
+        function SPEEDRATE() {
+            let D = parseFloat(document.getElementById("D").value);
+            let n = parseFloat(document.getElementById("n").value);
+            let Vc = (3.14159265 * D * n) / 1000;
+            document.getElementById("SPEEDRATE").value = Vc.toFixed(3);
+        }
+        function CUTTING SPEED() {
+            var f = parseFloat(document.getElementById("d").value);
+            var u = parseFloat(document.getElementById("n").value);
+            var V = (f * (22/7) * u) / 1000;
+            document.getElementById("CUTTING SPEED").value = V.toFixed(3);
+        }
+    </script>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .Calculator{
+            width: 340px;
+            height: 420px;
+            border: 5px solid rgb(0, 0, 0);
+            border-radius: 20px;
+            background-color: rgb(47, 185, 253);
+            padding: 15px;
+            margin: 20px;
+            box-shadow: 7px 5px #e91dbd;
+            font-family:sans-serif;
+        }
+        .Calculator h1{
+            text-align: center;
+        }
+        .Calculator input{
+            background-color: rgb(191, 255, 72);
+            height: 20px;
+        }
+        .Calculator button{
+            background-color: rgb(228, 138, 21);
+            padding: 15px;
+        }
+        h1{
+            font-size: 20px;
+            text-align: center;
+            color: #000;
+        }
+        h2{
+            font-size: 40px;
+            text-align: center;
+            color: rgb(13, 255, 154);
+        }
+        body{
+            background-color: rgb(121, 134, 247);
+        }
+        .img{
+            border-radius: 20px;
+            border: 5px solid rgb(61, 230, 145);
+        }
+        input{
+            margin: 10px;
+        }
+    </style>    
+</head>
+<body>
+    <div class="h1">
+        <h2><u>Speed Rate and Cutting Speed </u></h2>
+      </div>  
+  <div class="container">
+    <!-- SPEED RATE -->
+    <div class="Calculator">
+        <h1><u>SPEED RATE</u></h1><br>
+        <label for="" style="margin-left: 20px;">ความเร็วรอบ (n)</label>
+        <br>
+        <input type="text" name="" id="n" size=""> (rev/min)
+        <br>
+        <label for="" style="margin-left: 20px;">เส้นผ่าศูนย์กลางงาน (D)</label>
+        <br>
+        <input type="text" name="" id="D" size=""> (mm)
+        <br>
+        <label for="" style="margin-left: 20px;">SPEED RATE (Vc)</label>
+        <br>
+        <input type="text" name="" id="SPEEDRATE" size=""> (m/min)
+        <br>
+        <br>
+        <button onclick="SPEEDRATE()">Enter</button>
+    </div>
+    <!-- Cutting speed -->
+    <div class="Calculator">
+        <h1><u>CUTTING SPEED</u></h1><br>
+        <label for="f">Machined diameter(Dm)</label>
+        <br>
+        <input type="text" name="" id="f" size="30px"><sp>(mm)</sp>
+        <br>
+        <label for="u">Spindle speed(n)</label>
+        <br>
+        <input type="text" name="" id="u" size="30px"><sp>(rpm)</sp>
+        <br>
+        <button onclick="vc()">Enter</button>
+        <br>
+        <hr style="border: 2px solid #000000;">
+        <label for="C">Cutting speed(Vc)</label>
+        <br>
+        <input type="text" name="" id="C" size="30px"><sp>(m/min)</sp>
+        <br>
+        <br>
+    </div>
+    
+</body>
+</html>
